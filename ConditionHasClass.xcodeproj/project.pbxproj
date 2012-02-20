@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0386559A14F173950054E026 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0386559914F173950054E026 /* Cocoa.framework */; };
 		038655A414F173950054E026 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 038655A214F173950054E026 /* InfoPlist.strings */; };
+		038655AC14F173C20054E026 /* RSTrixiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038655AB14F173C20054E026 /* RSTrixiePlugin.framework */; };
+		038655B114F173FF0054E026 /* ConditionHasClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 038655AE14F173FF0054E026 /* ConditionHasClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038655B214F173FF0054E026 /* ConditionHasClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 038655AF14F173FF0054E026 /* ConditionHasClass.m */; };
+		038655B314F173FF0054E026 /* ConditionHasClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038655B014F173FF0054E026 /* ConditionHasClass.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +21,13 @@
 		0386559C14F173950054E026 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0386559D14F173950054E026 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0386559E14F173950054E026 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		038655A114F173950054E026 /* ConditionHasClass-Info.plist */ = {isa = PBXFileReference; path = "ConditionHasClass-Info.plist"; sourceTree = "<group>"; };
+		038655A114F173950054E026 /* ConditionHasClass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConditionHasClass-Info.plist"; sourceTree = "<group>"; };
 		038655A314F173950054E026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		038655A514F173950054E026 /* ConditionHasClass-Prefix.pch */ = {isa = PBXFileReference; path = "ConditionHasClass-Prefix.pch"; sourceTree = "<group>"; };
+		038655A514F173950054E026 /* ConditionHasClass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConditionHasClass-Prefix.pch"; sourceTree = "<group>"; };
+		038655AB14F173C20054E026 /* RSTrixiePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixiePlugin.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug/RSTrixiePlugin.framework"; sourceTree = "<group>"; };
+		038655AE14F173FF0054E026 /* ConditionHasClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionHasClass.h; sourceTree = "<group>"; };
+		038655AF14F173FF0054E026 /* ConditionHasClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionHasClass.m; sourceTree = "<group>"; };
+		038655B014F173FF0054E026 /* ConditionHasClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConditionHasClass.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038655AC14F173C20054E026 /* RSTrixiePlugin.framework in Frameworks */,
 				0386559A14F173950054E026 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +63,7 @@
 		0386559814F173950054E026 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				038655AB14F173C20054E026 /* RSTrixiePlugin.framework */,
 				0386559914F173950054E026 /* Cocoa.framework */,
 				0386559B14F173950054E026 /* Other Frameworks */,
 			);
@@ -74,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				038655A014F173950054E026 /* Supporting Files */,
+				038655AE14F173FF0054E026 /* ConditionHasClass.h */,
+				038655AF14F173FF0054E026 /* ConditionHasClass.m */,
+				038655B014F173FF0054E026 /* ConditionHasClass.xib */,
 			);
 			path = ConditionHasClass;
 			sourceTree = "<group>";
@@ -90,6 +103,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		038655AD14F173CD0054E026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038655B114F173FF0054E026 /* ConditionHasClass.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		0386559514F173950054E026 /* ConditionHasClass */ = {
 			isa = PBXNativeTarget;
@@ -98,6 +122,7 @@
 				0386559214F173950054E026 /* Sources */,
 				0386559314F173950054E026 /* Frameworks */,
 				0386559414F173950054E026 /* Resources */,
+				038655AD14F173CD0054E026 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -140,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038655A414F173950054E026 /* InfoPlist.strings in Resources */,
+				038655B314F173FF0054E026 /* ConditionHasClass.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038655B214F173FF0054E026 /* ConditionHasClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +244,15 @@
 		038655A914F173950054E026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConditionHasClass/ConditionHasClass-Prefix.pch";
 				INFOPLIST_FILE = "ConditionHasClass/ConditionHasClass-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,10 +261,15 @@
 		038655AA14F173950054E026 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConditionHasClass/ConditionHasClass-Prefix.pch";
 				INFOPLIST_FILE = "ConditionHasClass/ConditionHasClass-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
