@@ -11,23 +11,25 @@
 
 @implementation ConditionHasClass
 
-@synthesize classNameField;
+@synthesize selectorField;
+@synthesize valueOfField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	
     if( nil != (self = [super initWithNibName:nibNameOrNil	bundle:nibBundleOrNil]))
     {
-		[self setName: @"Has Class"];
+		[self setPluginName: @"Has Class"];
     }
     return self;
 }
 
-- (BOOL) hasSelectorField {
-	return YES;
-}
 
 - (NSString *) predicate {
-	return @"";
+	return @"hasClass";
+}
+
+- (NSString *) expression {
+	return [NSString stringWithFormat:@".('%@').%@('%@')", [self selectorField],[self predicate],[[self valueOfField]stringValue]];
 }
 
 @end

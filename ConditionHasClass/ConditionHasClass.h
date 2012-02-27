@@ -6,10 +6,9 @@
 //  Copyright (c) 2012 Roaring Sky. All rights reserved.
 //
 
-#import <RSTrixiePlugin/RSTrixiePlugin.h>
+#import <RSTrixiePlugin/RSConditionPlugin.h>
 
-@interface ConditionHasClass : RSTrixiePlugin
+@interface ConditionHasClass : RSConditionPlugin
 
-@property (retain) IBOutlet NSTextField * classNameField;
 
 @end
